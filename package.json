@@ -1,0 +1,30 @@
+{
+    "name": "carbone-subnoto-demo",
+    "version": "1.0.0",
+    "description": "Demo project integrating CarboneIO document generation with Subnoto electronic signatures",
+    "main": "dist/index.js",
+    "type": "module",
+    "scripts": {
+        "build": "tsc",
+        "start": "node dist/index.js",
+        "dev": "tsx src/index.ts"
+    },
+    "keywords": [
+        "carbone",
+        "subnoto",
+        "signatures",
+        "document-generation"
+    ],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@subnoto/api-client": "2.3.1",
+        "dotenv": "^16.4.5",
+        "got": "^14.0.0"
+    },
+    "devDependencies": {
+        "@types/node": "^22.0.0",
+        "typescript": "^5.3.3",
+        "tsx": "^4.7.0"
+    }
+}
