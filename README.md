@@ -1,10 +1,12 @@
-# CarboneIO to Subnoto Integration Demo
+# CarboneIO x Subnoto Integration Demo
 
-This project demonstrates the integration between CarboneIO (document generation) and Subnoto (electronic signatures).
+This project demonstrates the integration between [CarboneIO](https://carbone.io/) (document generation) and [Subnoto](https://subnoto.com/) (electronic signatures).
 
 ## Overview
 
 The application generates a PDF document using CarboneIO with signature fields, extracts signature positions from the CarboneIO response, creates an envelope in Subnoto, adds signature blocks based on the extracted positions, and sends the envelope for signing.
+
+Full documentation is available in the tutorial [Integrate CarboneIO with Subnoto](https://subnoto.com/documentation/developers/integrations/carboneio).
 
 ## Prerequisites
 

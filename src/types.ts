@@ -7,4 +7,3 @@ export interface SignaturePosition {
     recipientFirstname?: string;
     recipientLastname?: string;
 }
-
