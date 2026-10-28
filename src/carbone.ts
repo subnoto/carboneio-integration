@@ -82,11 +82,11 @@ export async function generatePDFWithCarbone(): Promise<{ buffer: Buffer; signat
             responseType: "buffer",
         });
 
-        const pdfBuffer = downloadResponse.body;
+        const pdfBuffer = Buffer.from(downloadResponse.body);
 
         // Verify it's a valid PDF
-        if (pdfBuffer.length < 4 || pdfBuffer.slice(0, 4).toString() !== "%PDF") {
-            throw new Error("Response is not a valid PDF. First bytes: " + pdfBuffer.slice(0, 50).toString());
+        if (pdfBuffer.length < 4 || pdfBuffer.subarray(0, 4).toString() !== "%PDF") {
+            throw new Error("Response is not a valid PDF. First bytes: " + pdfBuffer.subarray(0, 50).toString());
         }
 
         console.log(`✓ PDF generated successfully (${pdfBuffer.length} bytes)`);

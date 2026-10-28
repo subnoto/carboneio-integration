@@ -10,10 +10,10 @@ Full documentation is available in the tutorial [Integrate CarboneIO with Subnot
 
 ## Prerequisites
 
--   Node.js 18+
--   pnpm
--   CarboneIO API key
--   Subnoto API credentials (access key, secret key, workspace UUID)
+- Node.js 22+
+- pnpm
+- CarboneIO API key
+- Subnoto API credentials (access key, secret key, workspace UUID)
 
 ## Setup
 
@@ -64,5 +64,5 @@ pnpm start
 
 ## References
 
--   [CarboneIO Documentation](https://carbone.io/documentation)
--   [Subnoto API Documentation](https://subnoto.com/documentation/developers/sdks/typescript)
+- [CarboneIO Documentation](https://carbone.io/documentation)
+- [Subnoto API Documentation](https://subnoto.com/documentation/developers/sdks/typescript)
